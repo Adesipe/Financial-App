@@ -159,8 +159,8 @@
     padding: 5px 20px;
 }
 .page-2 .finance .finance-image img {
-    width: 600px;
-    height: 400px;
+    width: 550px;
+    height: 350px;
     transition: transform 2.5s;
     cursor: pointer;
 }
