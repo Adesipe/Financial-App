@@ -1,0 +1,591 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* NAVBAR */
+.nav-container {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 3px rgba(252, 240, 255, 1);
+    height: 60px;
+    line-height: 50px;
+    /*margin-top: -1rem;*/
+    width: 100%;
+    position: fixed;
+}
+.nav-container h1 {
+    font-size: 27px;
+    letter-spacing: -0.03rem;
+    color: #02026e;
+    padding: 6px;
+}
+.nav-container .navlink nav ul li {
+    display: flex;
+}
+.navlink nav ul {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 2%;
+}
+.navlink nav ul li {
+    padding: 2%;
+}
+.navlink nav ul li a {
+    padding: 2%;
+    font-size: 1.2rem;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform 1.5s;
+}
+.navlink nav ul li a:hover {
+    color: #070746;
+    transform: translateY(-3px);
+    font-size: 1.25rem;
+}
+.nav-container .menu {
+    padding: 5px 0;
+    width: 35px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 18px;
+    display: none;
+}
+
+/* PAGE 1 */ 
+.page-1 {
+    height: 100vh;
+    background-image: url(../Images/image2.jpg);
+    background-size: cover;
+}
+.page-1 .home-container {
+    padding: 9% 8%;
+}
+.page-1 .home-container h1 {
+    color: #6dcc6d;
+    font-size: 3rem;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.page-1 .home-container h2{
+    color: #ffffff;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.page-1 .home-container p {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 3px;
+    margin-top: 5%;
+}
+.page-1 .button {
+    margin-top: 2%;
+    padding: 2.5rem;
+}
+.page-1 .button button {
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #225722;
+    color: #ffffff;
+    border: 1px solid #adff2f;
+    font-size: 1.3rem;
+    transition: ease-out .8s;
+    cursor: pointer;
+}
+.page-1 .button button:hover {
+    background-color: #003800;
+    border: 2px solid #6dcc6d;
+}
+
+/* PAGE2 */
+.page-2 {
+    width: 100%;
+    height: 95vh;       
+    background-color: #ffffff;
+}
+.page-2 .services-container {
+    width: 90%;
+    margin: auto;
+}
+.page-2 .services-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 15px 0;
+    margin-top: 3%;
+}
+.page-2 .services {
+    background-color: #02026e;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    text-align: center;
+}
+.page-2 .services:hover {
+    transform: translateY(-5px);
+}
+.page-2 .services i {
+    color: #c0c0c0;
+    font-size: 2rem;
+    padding: 5px 0;
+}
+.page-2 .services h3 {
+    color: #6dcc6d;
+    font-size: 1.4rem;
+    padding: 2px 5px;
+}  
+.page-2 .services p{
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 3px 10px;
+}   
+.page-2 .finance {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+.page-2 .finance .finance-image {
+    flex-basis: 40%;
+    padding: 5px 20px;
+}
+.page-2 .finance .finance-image img {
+    width: 600px;
+    height: 400px;
+    transition: transform 2.5s;
+    cursor: pointer;
+}
+.page-2 .finance .finance-image img:hover {
+    transform: translateY(-8px);
+}
+.page-2 .finance .finance-content {
+    flex-basis: 50%;
+}
+.page-2 .finance .finance-content button {
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #225722;
+    color: #ffffff;
+    border: 1px solid #adff2f;
+    font-size: 1.3rem;
+    transition: ease-out .8s;
+    cursor: pointer;
+    margin-top: -5%;
+}
+.page-2 .finance .finance-content button {
+    background-color: #003800;
+    border: 2px solid #6dcc6d;
+}
+.page-2 .finance .finance-content h2 {
+    font-size: 2.2rem;
+    color: #070746;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.page-2 .finance-content .finance-markets {
+    padding: 7px;
+}
+.page-2 .finance-content .finance-markets h3 {
+    font-size: 1.7rem;
+    color: #6dcc6d;
+}
+.page-2 .finance-content .finance-markets p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.page-2 .finance-content .finance-markets input {
+    width: 20px;
+}
+
+/* PAGE 3 */
+.page-3 {
+    width: 100%;
+    height: 94vh;
+    background-color: #070746;
+}
+.page-3 .portfolio-container .portfolio-content {
+    text-align: center;
+}
+.page-3 .portfolio-container .portfolio-content h2 {
+    padding: 20px 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+.page-3 .portfolio-container .portfolio-content h1 {
+    padding: 25px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3rem;
+    color: #ffffff;
+}
+.page-3 .portfolio-container .portfolio-content h1 span {
+    color: #225722;
+}
+.page-3 .portfolio-container .portfolio-content p {
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.portfolio-container .portfolio-images .port-images {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    cursor: pointer;
+    overflow-x: scroll;
+}
+.portfolio-container .portfolio-images .port-images .port-image {
+    position: relative;
+    width: 235px;
+    height: 220px;
+    margin-top: 15%;
+    padding: 10px;
+}
+.portfolio-container .portfolio-images .port-images .port-image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.page-4 {
+    width: 100%;
+    height: 97vh;
+    background-color: #bebebe;
+}
+.page-4 .team-container {
+    width: 85%;
+    margin: auto;
+}
+.page-4 .team-container .team-content h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0;
+    color: #070746;
+} 
+.page-4 .team-container .team-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.01rem;
+    word-spacing: 0.2rem;
+    text-align: center;
+    padding: 0px 25px;
+    color: #070746;
+}
+.page-4 .team-container .team-content h1 span {
+    color: #3a9c3a;
+}
+.page-4 .team-container .team-content p {
+    text-align: center;
+    padding: 25px 0;
+    font-size: 1.1rem;
+    font-weight: 520;
+    word-spacing: 0.3rem;
+}
+.page-4 .team-container .team-content2 {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    margin-top: 5%;
+    text-align: center;
+}
+.page-4 .team-container .team-content2 .team-contents {
+    padding: 40px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.page-4 .team-container .team-content2 .team-contents:hover {
+    transform: translateY(-7px);
+    background-color: #6868a0;
+}
+.page-4 .team-container .team-content2 .team-contents img {
+    border-radius: 50%;
+}
+.page-4 .team-container .team-content2 .team-contents h2 {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: #070746;
+    padding: 5px;
+}
+.page-4 .team-container .team-content2 .team-contents p {
+    font-size: 1.3rem;
+    color: #3a9c3a;
+    padding: 5px;
+}
+.page-4 .team-container .team-content2 .team-icon {
+    display: flex;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+.page-4 .team-container .team-content2 .team-icon i {
+    font-size: 1.3rem;
+    border-radius: 50%;
+    padding: 3px;
+    color: #3a9c3a;
+    background-color: #02026e;
+}
+.page-4 .team-container .team-content2 .team-icon i:hover {
+    background-color: #3a9c3a;
+    color: #070746;
+}
+
+
+/* PAGE 6 */
+.page-6 {
+    background-color: #070746;
+    min-height: 60vh;
+    width: 100%;
+}
+.page-6 .nav-subscribe {
+    height: 100%;
+    background-color: #6dcc6d;
+    margin-top: 3%;
+    height: 45vh;
+} 
+.page-6 .nav-subscribe h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+    font-size: 2.7rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+.page-6 .nav-subscribe p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+.page-6 .nav-subscribe input {
+    margin-top: 3%;
+    width: 20%;
+    height: 4vh;
+    margin-left: 40%;
+    border: none;
+    border: 2px solid silver;
+    padding: 5px 2px;
+}
+.page-6 .nav-subscribe button {
+    margin-top: 1%;
+    width: 20%;
+    height: 4vh;
+    margin-left: 40%;
+    border: none;
+    border: 2px solid silver;
+    cursor: pointer;
+    transition: ease-out 2s;
+}
+.page-6 .nav-subscribe button:hover {
+    background-color: #0d0db3;
+}
+.page-6 .nav-footer .nav-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9797dd;
+    margin-top: 10%;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 1100px) {  
+    .page-4 .team-container {
+        width: 95%;
+        margin: auto;
+    }
+    .page-4 .team-container .team-content2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .page-4 .team-container .team-content2 .team-contents {
+        padding: 10px 5px;
+    }
+    .page-2 .finance {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .page-2 .finance .finance-image {
+        flex-basis: 45%;
+    }
+    .page-2 .finance .finance-content {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 950px) {
+    .page-2 {
+        width: 100%;
+        height: 120vh;       
+    }
+    .page-2 .services-content {
+        width: 96%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 10px;
+    }
+    .page-2 .finance {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 10px;
+    }
+    .page-2 .finance .finance-image img {
+        width: 40vh;
+        height: 30vh;
+    }
+    .page-2 .finance .finance-content {
+        padding: 25px 0;
+    }
+    .portfolio-container .portfolio-images .port-images {
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+        cursor: pointer;
+        overflow-x: scroll;
+    }
+    .portfolio-container .portfolio-images .port-images .port-image {
+        min-width: 235px;
+        min-height: 220px;
+    }
+    .page-6 .nav-subscribe input {
+        margin-top: 5%;
+        width: 40%;
+        border-radius: 5px;
+        margin-left: 28%;
+        padding: 5px 5px;
+    }
+    .page-6 .nav-subscribe button {
+        margin-top: 3%;
+        width: 40%;
+        height: 4vh;
+        margin-left: 28%;
+    }
+}
+
+@media (max-width: 650px) {
+    .nav-container {
+        width: 100%;
+    }
+    .nav-container nav ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-container nav ul {
+        overflow: hidden;
+        display: block;
+        width: 120%;
+        height: 40%;
+        background-color: #ffffff;
+    }
+    .nav-container .menu {
+        display: block;
+    }
+    .page-4 {
+        height: 120vh;
+    }
+    .page-4 .team-container .team-content2 {
+        margin-top: -3px;
+        gap: 10px;
+    }
+    .page-4 .team-container .team-content2 .team-contents {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .page-1 .home-container h1 {
+        font-size: 2.5rem;    
+        margin-top: 25%;
+    }
+    .page-1 .home-container p {
+        margin-top: 10%;
+    }
+    .page-1 .button {
+        margin-top: 15%;
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+        padding: 2%;
+    }
+    .page-2 {
+        height: 150vh;
+    }
+    .page-2 .services-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .page-2 .finance {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 5px;
+    }
+    .page-2 .finance .finance-image img {
+        margin-top: 20px;
+    }
+    .page-2 .finance .finance-content {
+        padding: 25px 0;
+    }
+    .page-4 {
+        height: 200vh;
+    }
+    .page-4 .team-container .team-content2 {
+        width: 70%;
+        margin: auto;
+    }
+    .page-4 .team-container .team-content2 .team-contents {
+        text-align: center;
+        gap: 20px;
+    }
+    .page-6 .nav-subscribe {
+        height: 55vh;
+    } 
+    .page-6 .nav-subscribe h1 {
+        padding-top: 8%;
+        width: 90%;
+        margin: auto;
+        font-size: 2.7rem;
+        font-weight: 600;
+        color: #ffffff;
+    }
+    .page-6 .nav-subscribe p {
+        width: 90%;
+        margin: 8px auto;
+    }
+    .page-6 .nav-subscribe input {
+        margin-top: 5%;
+        width: 60%;
+        margin-left: 20%;
+    }
+    .page-6 .nav-subscribe button {
+        margin-top: 3%;
+        width: 60%;
+        height: 4vh;
+        margin-left: 20%;
+    }
+    .page-6 .nav-footer .nav-copyright {
+        margin-top: 20%;
+        font-size: 1.1rem;
+        padding: 3px 15px;
+        text-align: center;
+    }
+}
